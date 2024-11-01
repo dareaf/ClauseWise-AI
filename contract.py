@@ -159,7 +159,7 @@ st.markdown("<h1 style='text-align: center; font-family: Arial;'>🛡️</h1>", 
 st.markdown("<h1 style='text-align: center; font-family: italic;'><span style='color: #6f42c1;'>Clause</span>Wise <span style='background: linear-gradient(to right, #007BFF, #28a745); -webkit-background-clip: text; color: transparent;'>AI</span></h1>", unsafe_allow_html=True)
 st.markdown("<h4 style='text-align: center; font-family: Courier New;'>AI powered contract analysis</h4>", unsafe_allow_html=True)
 
-uploaded_file = st.file_uploader("Upload a contract", type="pdf, docx, doc")
+uploaded_file = st.file_uploader("Upload a contract", type="pdf")
 
 if uploaded_file:
     pdf_text = extract_text_from_pdf(uploaded_file)
